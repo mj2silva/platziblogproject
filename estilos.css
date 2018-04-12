@@ -1,0 +1,183 @@
+body {
+	margin: 0;
+	background-color: #efefef;
+}
+.fondoblanco {
+	background-color: white;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #273b47;
+	font-family: 'Roboto', sans-serif;
+}
+.logo {
+	padding: 10px 0 10px 20px;
+	margin: 0;
+}
+.logo img {
+	width: 90px;
+}
+.border {
+	border: solid white;
+	border-width: 0 0 0 1px;
+}
+.menu {
+	display: flex;
+	flex-direction: flex-start;
+	align-items: center;
+
+}
+.menu li {
+	display: inline-block;
+	padding: 7px 0;
+	border-top: solid 5px #273b47
+}
+.menu li:hover {
+	border-top: solid 5px #7dcd40;
+}
+.menu li a{
+	display: inline-block;
+	padding: 0 20px;
+	line-height: 30px;
+	color: white;
+	text-decoration: none;
+}
+.header ul {
+	display: flex;
+	margin: 0 10px 0 0;
+}
+.loginbtn {
+	margin-right: 20px;
+	color: white;
+	background-color: #ff4842;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+.container {
+	width: 1300px;
+	margin: 0 auto;
+}
+.buscar {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0;
+	font-family: 'Roboto', sans-serif;
+}
+.buscartxt {
+	margin-right: 10px;
+	padding: 0 7px;
+	border: 0;
+	border-radius: 5px;
+}
+.buscar .button {
+	background-color: #333333;
+	background-image: url(images/lupa.png);
+	background-position: center;
+	background-size: 15px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+.buscar button:focus, .buscar input {
+	outline: none;
+}
+.background {
+	background-image: url(images/img-main.jpg);
+	height: 600px;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+}
+.title {
+	background-color: rgba(234,232,239,90%);
+	display: flex;
+	flex-direction: column;
+	margin: 30px 20px;
+	padding: 10px 20px;
+	font-family:'Montserrat', sans-serif;
+	font-size: 25px;
+	width: 650px;
+	color: #616063;
+}
+.descripcion {
+	display: flex;
+	justify-content: space-between;
+	border-top: solid 1px;
+	border-color: grey;
+	color: grey;
+	font-size: 15px;
+	align-items: center;
+}
+.autor {
+	display: flex;
+	align-items: center;
+}
+.autorpicture {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin: 15px 15px 0 0;
+}
+.posts {
+	padding-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+.posts .section {
+	display: flex;
+	justify-content: space-between;
+}
+.autor.b {
+	justify-content: space-between;
+	border-top: solid 1px grey;
+	color: grey;
+}
+.singlepost {
+	width: 400px;
+	font-size: 19px;
+}
+.singlepost img{
+	width: 400px;
+}
+.datospost h2{
+	margin-top: 8px;
+}
+.selpagina {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+.selpagina p{
+	margin-right: 15px;
+	font-weight: bold;
+}
+.buttonpag {
+	background-color: #eaeaea;
+	border: 1px solid #cccccc;
+	padding: 10px 12px;
+	cursor: pointer;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.buttonpag.active {
+	background-color: white;
+	border: none;
+	cursor: auto;
+}
+.buttonpag:focus {
+	outline: none;
+}
+.buttonpag.next:after {
+	content: '›';
+}
+.buttonpag.final:after {
+	content: '››';
+}
